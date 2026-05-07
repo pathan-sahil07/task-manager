@@ -251,10 +251,10 @@ Enums: `GlobalRole` (ADMIN/MEMBER), `ProjectRole` (ADMIN/MEMBER),
 
 ## 📺 Demo Video
 
-[Link to Loom/YouTube demo]
+
 
 ---
 
 ## 👤 Author
 
-[Your Name] — [your-email@example.com]
+PATHAN SAHIL - sahil515591@gmail.com
