@@ -13,7 +13,11 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://task-manager-ashy-delta.vercel.app",
+      "https://task-manager-ep2w7smsn-sahil515591-9209s-projects.vercel.app",
+    ],
     credentials: true,
   })
 );
