@@ -1,19 +1,23 @@
-# TaskFlow — Team Task Manager
+# TaskFlow — Collaborative Project Management Platform
 
-A full-stack web application for managing projects, assigning tasks, and tracking progress with role-based access control.
+A full-stack web application for managing projects, assigning tasks, and tracking team workflows through role-based access control
+
+---
+## 📌 Overview
+
+- TaskFlow is a collaborative project management platform that enables teams to manage projects, assign tasks, track progress, and enforce role-based access control through a modern full-stack architecture.
+- Integrated with GitHub-based CI/CD deployment workflows using Vercel and Railway.
 
 ---
 
 ## 🚀 Live Demo
 
-- **Frontend:** https://your-frontend.railway.app
-- **Backend API:** https://your-backend.railway.app
+- **Frontend:** https://task-manager-ashy-delta.vercel.app
+- **Backend API:** https://task-manager-production-020e.up.railway.app
+- - **GitHub Repository:** https://github.com/pathan-sahil07/task-manager
 
-Demo credentials:
-- Admin: `admin@taskmanager.com` / `Admin@123`
-- Member: `bob@taskmanager.com` / `Member@123`
+## 📸 Screenshots 
 
----
 
 ## 🛠 Tech Stack
 
@@ -23,7 +27,7 @@ Demo credentials:
 | Backend    | Node.js, Express.js               |
 | Database   | PostgreSQL (via Prisma ORM)       |
 | Auth       | JWT (Bearer token)                |
-| Deployment | Railway                           |
+| Deployment | Vercel (Frontend), Railway (Backend & PostgreSQL) |
 
 ---
 
@@ -156,7 +160,7 @@ npm run dev
 
 ---
 
-## 🌐 Deployment on Railway
+## 🌐 Deployment Architecture
 
 ### Step 1: Push to GitHub
 ```bash
@@ -231,6 +235,28 @@ npm run db:seed
 
 ---
 
+## 🏗 Architecture
+
+```text
+Client (Next.js Frontend)
+          ↓
+REST API (Express.js Backend)
+          ↓
+Prisma ORM
+          ↓
+PostgreSQL Database
+```
+
+## Engineering Challenges Solved
+
+- Fixed production CORS issues between Vercel and Railway
+- Configured environment variables across cloud platforms
+- Connected Prisma ORM with Railway PostgreSQL
+- Resolved internal vs public database networking issues
+- Implemented JWT authentication and RBAC authorization
+- Deployed full-stack app with GitHub CI/CD integration
+ --- 
+
 ## 📝 Database Schema
 
 ```
@@ -248,13 +274,25 @@ Enums: `GlobalRole` (ADMIN/MEMBER), `ProjectRole` (ADMIN/MEMBER),
        `TaskPriority` (LOW/MEDIUM/HIGH/URGENT)
 
 ---
+## 🚀 Future Improvements
 
-## 📺 Demo Video
+- Real-time collaboration using WebSockets
+- Email notifications
+- File attachments
+- Activity timelines
+- Dockerized deployment
+- Unit and integration testing
+---  
+## 🧪 Demo Credentials
+
+| Role   | Email | Password |
+|--------|-------|----------|
+| Admin | admin@taskmanager.com | Admin@123 |
+| Member | bob@taskmanager.com | Member@123 |
 
 
 
 ---
-
 ## 👤 Author
 
 PATHAN SAHIL - sahil515591@gmail.com
