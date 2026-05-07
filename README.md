@@ -16,8 +16,19 @@ A full-stack web application for managing projects, assigning tasks, and trackin
 - **Backend API:** https://task-manager-production-020e.up.railway.app
 - - **GitHub Repository:** https://github.com/pathan-sahil07/task-manager
 
-## 📸 Screenshots 
+## 📸 Screenshots
 
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Projects
+![Projects](screenshots/projects.png)
+
+### Kanban Board
+![Kanban](screenshots/kanban.png)
 
 ## 🛠 Tech Stack
 
